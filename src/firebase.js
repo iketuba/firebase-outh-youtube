@@ -3,12 +3,12 @@ import { getAuth } from "firebase/auth";
 import { GoogleAuthProvider } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDd_rE6xk17aeujyUA2v-C8ZN4mahYvh9c",
-  authDomain: "fir-outh-76be0.firebaseapp.com",
-  projectId: "fir-outh-76be0",
-  storageBucket: "fir-outh-76be0.appspot.com",
-  messagingSenderId: "3259235995",
-  appId: "1:3259235995:web:32a4e9f28ea3ab949a503e",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
